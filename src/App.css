@@ -3,6 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
- 
+
+body {
+   background-image: url(/src/assets/horizonte.png);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  gap: 230px;
+  margin-top: 20px;
+  padding: 0 20px;
+  
+}
+
+.logo {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  
+}
+
+h1, h2 {
+  color: aqua;
+}
+
+  
+
 
 

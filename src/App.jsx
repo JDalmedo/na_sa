@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import React from 'react';
-import './App.css';
 import logo from "./assets/logo.png";
 import Figure from './components/Figure';
+import './App.css';
 
 const App = () => {
   const today = new Date(Date.now()).toISOString().slice(0, 10);
@@ -39,7 +39,7 @@ const App = () => {
         <Figure data={apod} />
       )}
       <div className="standard-dialog-center">
-        <h1 className="dialog-text">&JDalmedo - 2023 - 
+        <h1 className="dialog-text">Fundación ONCE - JDalmedo - 2023 - 
           <a href="https://api.nasa.gov/">https://api.nasa.gov/</a>
         </h1>
       </div>
