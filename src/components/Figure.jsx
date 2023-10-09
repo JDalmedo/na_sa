@@ -1,11 +1,14 @@
-
-
 const Figure = ({ data }) => {
+
     return (
+
         <figure>
             <img src={data.url} alt={data.title} />
+
             <div class="window">
+
                 <div class="title-bar">
+                    
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">{data.title}</h1>
                     <button aria-label="Resize" class="resize"></button>
@@ -19,3 +22,5 @@ const Figure = ({ data }) => {
         </figure>
     );
 };
+
+export default Figure
