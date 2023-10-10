@@ -10,7 +10,7 @@ const App = () => {
   const [apod, setApod] = useState({});
   const [date, setDate] = useState(today);
   const NASA_URL = "https://api.nasa.gov/";
-  const NASA_API_KEY = "vuOh8rdobFqBgXJbBrgLcCvzvzPzz4fePZAuYgXk";
+  const NASA_API_KEY = "QWMQMNmkNRMaqAsuMXDXaUzpnQf5HUFe3K1O0kCs";
 
   useEffect(() => {
 
@@ -27,24 +27,24 @@ const App = () => {
     setDate(ev.target.value.toLocaleString());
   };
   return (
-    <div className="App">
-      <h2 className="title">NASA API
-        <img src={logo} className="logo" alt="NASA LOGO" />
-      </h2>
-      <h1>Foto Astronómica del día</h1>
-      <input type="date" id="photo-date" onChange={handleInput} />
-      {date > today ? (
-      <h2>Porfavor, elige una fecha anterior</h2>
-      ) : (
+    <>
+      <img src={logo} className="logo" alt="NASA LOGO" />
+      
+      <div className="App">
+        <h2 className="title">NASA API</h2>
+        <h1>Foto del Día</h1>
+        <input type="date" id="photo-date" onChange={handleInput} />
+        {date > today ? (
+        <h2>Elige una fecha anterior, porfavor</h2>
+        ) : (
         <Figure data={apod} />
-      )}
-      <div className="standard-dialog-center">
-        <h1 className="dialog-text">Fundación ONCE - JDalmedo - 2023 - 
-          <a href="https://api.nasa.gov/">https://api.nasa.gov/</a>
-        </h1>
+        )}
+        <div className="standard-dialog center">
+          <h1 className="dialog-text">JDalmedo - Fundación ONCE - 2023 <a href="https://api.nasa.gov/">https://api.nasa.gov/</a></h1>
+        </div>
       </div>
-    </div>
-);
+    </>
+  );
 };
 
 export default App

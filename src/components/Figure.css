@@ -1,0 +1,26 @@
+.fondo {
+    height: 350px;
+    width: 500px;
+    border-radius: 35px;
+    padding: 10px;
+}
+.close, .resize {
+    height: 20px;
+    width: 80px;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.window {
+    align-items: center;
+    color: aquamarine;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.window .title-bar{
+    padding: 10px;
+    justify-content: center;
+}

@@ -5,35 +5,41 @@
 }
 
 body {
-   background-image: url(/src/assets/horizonte.png);
+  background-image: url(src/assets/horizonte.png);
+  background-size: cover;
 }
-.app {
+.App{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.title {
-  display: flex;
-  justify-content: center;
-  gap: 230px;
-  margin-top: 20px;
-  padding: 0 20px;
   
 }
-
-.logo {
-  height: 125px;
-  width: 125px;
+img .logo{
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  
+  top: 0;
+  left: 0;
 }
 
 h1, h2 {
-  color: aqua;
+  color: aquamarine;
+}
+.dialog-text{
+  padding: 30px 0;
+}
+.details-bar{
+  padding: 10px 0;
+}
+.title-bar{
+  display: flex;
+  
 }
 
+.title {
+  top: 0;
   
+}
 
 
 
