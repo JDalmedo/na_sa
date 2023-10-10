@@ -29,7 +29,6 @@ const App = () => {
   return (
     <>
       <img src={logo} className="logo" alt="NASA LOGO" />
-      
       <div className="App">
         <h2 className="title">NASA API</h2>
         <h1>Foto del Día</h1>
@@ -39,10 +38,12 @@ const App = () => {
         ) : (
         <Figure data={apod} />
         )}
+        
         <div className="standard-dialog center">
           <h1 className="dialog-text">JDalmedo - Fundación ONCE - 2023 <a href="https://api.nasa.gov/">https://api.nasa.gov/</a></h1>
         </div>
       </div>
+      
     </>
   );
 };
