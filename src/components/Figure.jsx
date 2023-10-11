@@ -9,9 +9,8 @@ const Figure = ({data}) => {
                 <div className="window">
                     <div className="title-bar">
                         <h1 className="title">{data.title}</h1>
-                        <button aria-label="Close" className="close"></button>
-                        
-                        <button aria-label="Resize" className="resize"></button>
+                        <button onClick="history.forward(+1)" aria-label="Close" className="close">Next</button>
+                        <button onClick="history.back(-1)" aria-label="Resize" className="resize">Back</button>
                     </div>
                     <div className="details-bar">
                         <span>{data.date}</span>
