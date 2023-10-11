@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .fondo {
     width: 80%;
   }
@@ -29,7 +29,19 @@ body {
   top: 0;
   left: 0;
 }
-
+input {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(213, 210, 245);
+  color: rgb(53, 54, 54);
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+}
+input:hover{
+  cursor: pointer;
+  color: rgb(236, 11, 11);
+}
 h1, h2 {
   color: aquamarine;
   font-size: 225%;

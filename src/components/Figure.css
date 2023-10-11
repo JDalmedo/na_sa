@@ -13,8 +13,8 @@ figure {
 }
 
 .close, .resize {
-    height: 20px;
-    width: 60px;
+    height: 30px;
+    width: 80px;
     border-radius: 5px;
     margin: 5px;
     background-color: rgb(249, 250, 250);
@@ -22,10 +22,17 @@ figure {
 
 .close, .resize:hover{
     cursor: pointer;
-    color: rgb(255, 159, 5);
-    transition: 300ms;
+    color: rgb(236, 11, 11);
+    transition: 400ms;
 }
-
+.close {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.resize{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
 .window {
     align-items: center;
     color: aquamarine;
