@@ -1,7 +1,7 @@
 import "./Figure.css";
 
 const Figure = ({data}) => {
-
+    
     return (
 
         <figure>
@@ -9,8 +9,8 @@ const Figure = ({data}) => {
                 <div className="window">
                     <div className="title-bar">
                         <h1 className="title">{data.title}</h1>
-                        <button onClick="history.forward(+1)" aria-label="Close" className="close">Next</button>
-                        <button onClick="history.back(-1)" aria-label="Resize" className="resize">Back</button>
+                        <button aria-label="Close" className="close">Siguiente</button>
+                        <button aria-label="Resize" className="resize">Anterior</button>
                     </div>
                     <div className="details-bar">
                         <span>{data.date}</span>
