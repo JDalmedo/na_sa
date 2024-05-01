@@ -5,9 +5,8 @@
 }
 
 body {
-  background-image: url(imgs/horizonte.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgb(182, 178, 178);
+  
 }
 
 .App{
@@ -43,7 +42,7 @@ input:hover{
   color: rgb(236, 11, 11);
 }
 h1, h2 {
-  color: aquamarine;
+  color: rgb(41, 43, 43);
   font-size: 225%;
 }
 
@@ -62,7 +61,7 @@ h1, h2 {
 }
 
 h3{
-  color: aquamarine;
+  color: rgb(41, 43, 43);
 }
 
 
